@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#543B9C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textLayoutBgColor">#00FFFFFF</color>
+    
+    <color name="shipment_in_progress">#46cf8f</color>
+    <color name="shipment_pending">#f0964d</color>
+    <color name="shipment_loading">#5090c6</color>
+    <color name="shipment_text_color">#9c9d9c</color>
+    <color name="shipment_cancelled">#b00020</color>
+    <color name="header_text_color">#101d3d</color>
+    <color name="color_accent">#ff7100</color>
+    <color name="color_text_grey">#848484</color>
+</resources>

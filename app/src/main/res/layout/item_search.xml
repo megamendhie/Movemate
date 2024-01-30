@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/screen_padding">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_box"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/header_text_color"
+            android:layout_marginStart="10dp"
+            tools:text="Macbook pro M2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/imgProduct"
+            app:layout_constraintStart_toEndOf="@id/imgProduct"/>
+
+        <TextView
+            android:id="@+id/txtShipmentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            tools:text="#NE43857340857904"
+            android:textColor="@color/color_text_grey"
+            app:layout_constraintTop_toBottomOf="@id/txtProduct"
+            app:layout_constraintStart_toStartOf="@id/txtProduct"/>
+        
+        <ImageView
+            android:id="@+id/imgDivFirst"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/ic_circle_solid"
+            app:layout_constraintStart_toEndOf="@id/txtShipmentNumber"
+            app:layout_constraintTop_toTopOf="@id/txtShipmentNumber"
+            app:layout_constraintBottom_toBottomOf="@id/txtShipmentNumber"
+            app:tint="@color/color_text_grey" />
+
+        <TextView
+            android:id="@+id/txtSenderAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:textSize="12sp"
+            tools:text="Paris"
+            android:textColor="@color/color_text_grey"
+            app:layout_constraintStart_toEndOf="@id/imgDivFirst"
+            app:layout_constraintTop_toTopOf="@id/txtShipmentNumber"
+            app:layout_constraintBottom_toBottomOf="@id/txtShipmentNumber"/>
+
+        <ImageView
+            android:id="@+id/imgDivSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/ic_arrow_forward_24"
+            app:layout_constraintStart_toEndOf="@id/txtSenderAddress"
+            app:layout_constraintTop_toTopOf="@id/txtShipmentNumber"
+            app:layout_constraintBottom_toBottomOf="@id/txtShipmentNumber"
+            app:tint="@color/color_text_grey" />
+
+        <TextView
+            android:id="@+id/txtReceiverAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:textSize="12sp"
+            tools:text="Morocco"
+            android:textColor="@color/color_text_grey"
+            app:layout_constraintStart_toEndOf="@id/imgDivSecond"
+            app:layout_constraintTop_toTopOf="@id/txtShipmentNumber"
+            app:layout_constraintBottom_toBottomOf="@id/txtShipmentNumber"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

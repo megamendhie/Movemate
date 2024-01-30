@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="166dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginHorizontal="6dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="1dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screen_padding"
+                android:layout_marginTop="@dimen/screen_padding"
+                android:text="Ocean freight"
+                android:textColor="@color/header_text_color"
+                android:textSize="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/txtRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/txtVehicleType"
+                app:layout_constraintTop_toBottomOf="@id/txtVehicleType"
+                android:text="International"/>
+            <ImageView
+                android:id="@+id/imgVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/pic_ship"
+                android:layout_marginTop="@dimen/screen_padding"
+                app:layout_constraintTop_toBottomOf="@id/txtVehicleType"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
