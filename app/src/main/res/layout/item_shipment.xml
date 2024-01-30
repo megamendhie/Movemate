@@ -20,12 +20,15 @@
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="4dp"
+                android:gravity="center_vertical"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="@color/shipment_in_progress"
                 android:text="@string/txt_in_progress"
                 android:background="@drawable/bg_badge_shipment"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:drawableStartCompat="@drawable/ic_cached_24px"
+                android:drawablePadding="4dp"/>
 
             <TextView
                 android:id="@+id/txtArrivalTime"
