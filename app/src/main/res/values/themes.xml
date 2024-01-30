@@ -7,6 +7,8 @@
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimary</item>
+
+        <item name="fontFamily">@font/urbanist_font_family</item>
     </style>
 
     <style name="Theme.Movemate" parent="Base.Theme.Movemate" />
