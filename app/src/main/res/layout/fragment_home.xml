@@ -116,6 +116,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginHorizontal="16dp"
                 android:textColor="@color/header_text_color"
+                android:textStyle="bold"
                 android:text="@string/txt_tracking"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textSize="24sp"/>
@@ -311,6 +312,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginHorizontal="16dp"
                 android:textColor="@color/header_text_color"
+                android:textStyle="bold"
                 android:text="@string/txt_available_vehicles"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textSize="24sp"/>
